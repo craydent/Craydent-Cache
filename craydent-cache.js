@@ -1,6 +1,6 @@
 require('craydent');
 var fs = require('fs');
-var dir = '/cache/', curdir = '.' + dir;
+var dir = __dirname.replace(process.cwd(),'') + '/cache/', curdir = '.' + dir;
 if (fs.existsSync(curdir)) {
 	fs.readdirSync(curdir).forEach(function (file) {
 		fs.unlinkSync(curdir+file);
@@ -51,7 +51,12 @@ module.exports = function(params){
 				}
 			}
 			$c.mkdirRecursive(self.rootdir,function(){
-				func(cb);
+				if (!$c.isGenerator(func)) {
+					return func(cb);
+				} else {
+					eval("$c.syncroit(function*(){ cb(yield* func());});")
+				}
+
 			});
 		});
 	}
