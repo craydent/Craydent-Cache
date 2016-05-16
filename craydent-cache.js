@@ -1,3 +1,11 @@
+/*/---------------------------------------------------------/*/
+/*/ Craydent LLC cache-v0.1.0                               /*/
+/*/	Copyright 2011 (http://craydent.com/about)              /*/
+/*/ Dual licensed under the MIT or GPL Version 2 licenses.  /*/
+/*/	(http://craydent.com/license)                           /*/
+/*/---------------------------------------------------------/*/
+/*/---------------------------------------------------------/*/
+
 require('craydent');
 var fs = require('fs');
 var dir = __dirname.replace(process.cwd(),'') + '/cache/', curdir = '.' + dir;
