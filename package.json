@@ -1,0 +1,25 @@
+{
+  "name": "craydent-cache",
+  "version": "0.0.1",
+  "description": "Cache REST endpoints",
+  "main": "craydent-cache.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://cinada@bitbucket.org/craydent/craydent-cache.git"
+  },
+  "keywords": [
+    "cache"
+  ],
+  "author": "Clark Inada",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/craydent/craydent-cache#readme",
+  "dependencies": {
+    "craydent": "^0.5.5"
+  }
+}
