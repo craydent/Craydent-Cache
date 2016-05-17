@@ -1,5 +1,5 @@
 /*/---------------------------------------------------------/*/
-/*/ Craydent LLC cache-v0.1.1                               /*/
+/*/ Craydent LLC cache-v0.1.3                               /*/
 /*/	Copyright 2011 (http://craydent.com/about)              /*/
 /*/ Dual licensed under the MIT or GPL Version 2 licenses.  /*/
 /*/	(http://craydent.com/license)                           /*/
@@ -49,7 +49,11 @@ module.exports = function(params){
 					files[name].current = filename;
 					res(true);
 					setTimeout(function () {
-						func(cb);
+						if (!$c.isGenerator(func)) {
+							return func(cb);
+						} else {
+							eval("$c.syncroit(function*(){ cb(yield* func());});")
+						}
 					}, refresh_interval);
 				});
 			};
