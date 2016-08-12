@@ -1,13 +1,13 @@
 {
   "name": "craydent-cache",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "Cache REST endpoints",
   "main": "craydent-cache.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jasmine-node test/unit_test-spec.js --color --autotest --watch craydent-cache.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,10 @@
   "license": "MIT",
   "homepage": "https://bitbucket.org/craydent/craydent-cache#readme",
   "dependencies": {
-    "craydent": "^0.5.5"
+    "craydent": "^0.6.0",
+    "mongodb": "^2.2.5"
+  },
+  "devDependencies": {
+    "jasmine-node": "^1.14.5"
   }
 }
