@@ -8,7 +8,7 @@
 
 // refresh/clear cache
 // mongo support, object support
-require('craydent/noConflict');
+var $c = require('craydent/noConflict');
 var fs = require('fs'),
 	dir = __dirname.replace(process.cwd(),'') + '/cache/', curdir = '.' + dir;
 

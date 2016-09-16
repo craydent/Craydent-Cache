@@ -1,6 +1,6 @@
 var Cache = require("../craydent-cache");
 
-$c.DEBUG_MODE = true;
+//$c.DEBUG_MODE = true;
 
 
 describe ('Cache methods', function () {
