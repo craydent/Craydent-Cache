@@ -1,6 +1,6 @@
 <img src="http://craydent.com/JsonObjectEditor/img/svgs/craydent-logo.svg" width=75 height=75/>
 
-# Craydent Cache 0.3.0 added
+# Craydent Cache 0.4.0 added
 **by Clark Inada**
 
 This module is a caching system so api data can be retrieved quickly with minimum overhead.
