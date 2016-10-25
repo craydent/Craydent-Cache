@@ -1,6 +1,6 @@
 <img src="http://craydent.com/JsonObjectEditor/img/svgs/craydent-logo.svg" width=75 height=75/>
 
-# Craydent Cache 0.4.0 added
+# Craydent Cache 0.4.1
 **by Clark Inada**
 
 This module is a caching system so api data can be retrieved quickly with minimum overhead.
@@ -101,7 +101,8 @@ $ npm i --save craydent-cache
 
 ## Download
 
- * [GitHub](https://github.com/craydent/Craydent-Cache/)
- * [BitBucket](https://bitbucket.org/craydent/craydent-cache)
+ * [GitHub](https://github.com/craydent/Cache/)
+ * [BitBucket](https://bitbucket.org/craydent/cache)
+ * [GitLab](https://gitlab.com/craydent/cache)
 
 Craydent-Cache is released under the [Dual licensed under the MIT or GPL Version 2 licenses](http://craydent.com/license).<br>

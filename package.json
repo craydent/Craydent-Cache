@@ -1,24 +1,25 @@
 {
   "name": "craydent-cache",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Cache REST endpoints",
   "main": "craydent-cache.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "jasmine-node test/unit_test-spec.js --color --autotest --watch craydent-cache.js"
+    "test": "jasmine-node test/unit_test-spec.js --color --autotest --watch craydent-cache.js",
+    "publish": "git push public;"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://cinada@bitbucket.org/craydent/craydent-cache.git"
+    "url": "git+https://cinada@bitbucket.org/craydent/cache.git"
   },
   "keywords": [
     "cache"
   ],
   "author": "Clark Inada",
   "license": "MIT",
-  "homepage": "https://bitbucket.org/craydent/craydent-cache#readme",
+  "homepage": "https://bitbucket.org/craydent/cache#readme",
   "dependencies": {
     "craydent": "^0.6.14",
     "mongodb": "^2.2.5"
